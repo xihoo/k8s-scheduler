@@ -1,6 +1,9 @@
 # makefile
 
 BIN_DIR=_output/bin
+export GO11MODULE=on
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io
 
 init:
 	mkdir -p ${BIN_DIR}

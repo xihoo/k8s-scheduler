@@ -12,6 +12,8 @@ type BinPackingPlugin struct {}
 
 const Name = "Bin-Packing-Plugin"
 
+var _ framework.FilterPlugin = &BinPackingPlugin{}
+
 func (bppl *BinPackingPlugin) Name() string {
 	return Name
 }
