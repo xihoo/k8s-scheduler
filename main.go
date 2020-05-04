@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./pkg/plugin"
 	"fmt"
+	"github/xihoo/k8s-scheduler/pkg/plugin"
 	"k8s.io/component-base/logs"
 	"k8s.io/kubernetes/cmd/kube-scheduler/app"
 	"math/rand"
