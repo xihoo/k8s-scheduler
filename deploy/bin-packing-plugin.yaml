@@ -164,12 +164,6 @@ data:
       score:
         enabled:
         - name: "Bin-Packing-Plugin"
-    pluginConfig:
-    - name: "Bin-Packing-Plugin"
-      args:
-        favorite_color: "#326CE5"
-        favorite_number: 7
-        thanks_to: "thockin"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -196,7 +190,7 @@ spec:
             name: scheduler-config
       containers:
         - name: scheduler-ctrl
-          image: bin-packing-plugin:1.0.0
+          image: docker.io/library/bin-packing-plugin:1.0.1
           imagePullPolicy: IfNotPresent
           args:
             - bin-packing-plugin

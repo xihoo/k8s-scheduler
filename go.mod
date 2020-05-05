@@ -28,7 +28,7 @@ replace (
 )
 
 require (
-	github.com/go-logr/logr v0.1.0
+	honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc // indirect
 	k8s.io/api v0.0.0
 	k8s.io/apimachinery v0.0.0
 	k8s.io/component-base v0.0.0
