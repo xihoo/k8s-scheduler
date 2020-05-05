@@ -158,7 +158,10 @@ data:
       lockObjectName: sample-scheduler
       lockObjectNamespace: kube-system
     plugins:
-      filter:
+      queueSort:
+        enabled:
+        - name: "Bin-Packing-Plugin"
+      score:
         enabled:
         - name: "Bin-Packing-Plugin"
     pluginConfig:
